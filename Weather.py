@@ -9,4 +9,5 @@ requisicao_dic = requisicao.json()
 descrisao = requisicao_dic["weather"][0]['description']
 temperatura = requisicao_dic['main']['temp']
 cidade = requisicao_dic['name']
-print (cidade ,descrisao, f"{temperatura}°C")
+umidade = requisicao_dic['main']['humidity']
+print (cidade ,descrisao, f"{temperatura}°C", f"Umidade relativa do ar {umidade}%")
